@@ -48,7 +48,7 @@ class Comment(Base):
         return {}
 
 
-asociation_table = Table('asociation', Base.metadata,
+asociation_table = Table('followers', Base.metadata,
 Column('user_from_id', Integer, ForeignKey('user.id')),
 Column('user_for_id', Integer, ForeignKey('user.id'))
 )
